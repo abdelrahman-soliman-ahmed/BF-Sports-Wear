@@ -1,0 +1,339 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li{
+    color: #444;
+    font-size: 14px;
+}
+
+/* Navigation bar */
+
+header, .navbar {
+    background-color: #353D41;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+    top:0;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+ 
+#navbar-brand:hover {
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+    color: #fff;
+}
+
+/* Slider */
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 60%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #65DAF9;
+}
+
+.carousel-indicators .active {
+    background-color: #65DAF9;
+}
+
+/*comment*/
+
+.row {
+    padding-bottom: 82px;
+}
+.img-fluid {
+    border:1px solid rgb(71, 71, 71);
+    position: relative;
+    top: 0px;
+}
+
+
+.img-fluid:hover{
+    position: relative;
+    top: 15px;
+    border: 12px solid #353D41;
+}
+
+.btn-dark {
+    font-weight: bold;
+    transition: .5s;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/*Comment*/
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4 {
+    transition: 0.5s;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.service-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h4 {
+    color: #65DAf9;
+}
+
+.service-box > a {
+    text-decoration: none;
+}
+
+.service-box > .ll {
+    position: relative;
+    right: 80px;
+    top: -5px
+}
+/* These "aa" "hh" and "mm"  to solve height and width in some photo */
+.aa {
+    height: 100%;
+}
+
+.hh {
+    height: 63%;
+}
+
+.mm {
+    height: 80%;
+}
+
+/*These for heading for all prodacts */
+.title > h1 {
+    position: relative;
+    bottom: 15px;
+    left: 20%;
+    border-bottom: 3px solid black;
+    font-style: italic;
+    font-family: sans-serif;
+    width: 60%;
+    letter-spacing: 15px;
+}
+
+.title > h1:hover {
+    background-color: #4444445e;
+}
+
+.main-title {
+    color: #444;
+    position: absolute;
+    bottom: 30px;
+    left: 35%;
+    border-bottom: 1px solid black;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.main-title > h3 {
+    border-bottom: 2px solid black;
+}
+
+/* Footer */
+
+#contact-area {
+    text-align: center;
+}
+
+.Contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #3EC1D5;
+}
+
+.Contact-box  i {
+    color: #444;
+    border: 1px solid #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 13px;
+}
+
+.Contact-box p {
+    font-size: 16px;
+}
+
+.Contact-title {
+    font-weight: bold;
+    color: #3EC1D5;
+}
+
+#msg-box p{
+    font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+
+#Contact-form .main-btn:hover {
+    color: #3EC1D5;
+}
+
+/* Copy */
+
+#copy-area {
+    background-color: #F1F1F1;
+}
+
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+}
+
+#copy-area .container a {
+    font-weight: bold;
+    color: #444;
+}
+
+#copy-area .container a:hover {
+    text-decoration: none;
+    color: #3EC1D5;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    /* in general */
+    .container {
+      padding: 20px 0;
+    }
+      /* Slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+          height: auto;
+    }
+      
+  #mainSlider .carousel-caption h2 {
+      font-size: 28px;
+    }
+  #mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><line stroke='rgba(0, 0, 0, 0.5)' x1='0' y1='0' x2='30' y2='0'/><line stroke='rgba(0, 0, 0, 0.5)' x1='0' y1='15' x2='30' y2='15'/><line stroke='rgba(0, 0, 0, 0.5)' x1='0' y1='30' x2='30' y2='30'/></svg>");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  @media(max-width:425px) {
+    /* Slider */
+    #mainSlider {
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 45%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* about */
+    .main-title {
+        font-size: 30px;
+    }
+
+    /* contact */
+    .Contact-box {
+        border: none;
+        margin-bottom: 0;
+    }
+  }
