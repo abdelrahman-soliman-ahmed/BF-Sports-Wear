@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -15,7 +19,9 @@ p, li{
     font-size: 14px;
 }
 
+
 /* Navigation bar */
+
 
 header, .navbar {
     background-color: #353D41;
@@ -42,6 +48,8 @@ header, .navbar {
 
 #navbar-links a {
     color: #fff;
+    position: relative;
+    left: 127px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -49,7 +57,22 @@ header, .navbar {
     color: #fff;
 }
 
+.navbar-nav{
+    position: relative;
+    right: 35%;
+}
+
+/* For Home At first Link In List */
+
+.home-icon, .fi-rr-home {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+  }
 /* Slider */
+
+
 .container-fluid {
     padding: 0;
 }
@@ -65,6 +88,8 @@ header, .navbar {
 #mainSlider .carousel-caption h2 {
     font-size: 50px;
     margin-bottom: 30px;
+    color:#000;
+    letter-spacing: 30px;
 }
 
 .main-btn {
@@ -106,7 +131,6 @@ header, .navbar {
 .img-fluid:hover{
     position: relative;
     top: 15px;
-    border: 12px solid #353D41;
 }
 
 .btn-dark {
@@ -154,7 +178,7 @@ header, .navbar {
     right: 80px;
     top: -5px
 }
-/* These "aa" "hh" and "mm"  to solve height and width in some photo */
+/* These "aa" "hh" and "mm"  to solve height and width in some photos */
 .aa {
     height: 100%;
 }
@@ -167,7 +191,10 @@ header, .navbar {
     height: 80%;
 }
 
-/*These for heading for all prodacts */
+
+/* These for heading for all prodacts */
+
+
 .title > h1 {
     position: relative;
     bottom: 15px;
@@ -337,3 +364,208 @@ header, .navbar {
         margin-bottom: 0;
     }
   }
+
+  /* For star ratings */
+  .star-rating {
+    font-size: 0;
+  }
+  
+  .star-rating > span {
+    display: inline-block;
+    font-size: 16px;
+    color: #ccc;
+    transition: color 0.2s;
+  }
+  
+  .star-rating > span.selected {
+    color: #ffcc00;
+  }
+  .star-rating .star.active {
+    color: yellow;
+  }
+
+  /* For Shopping Cart */
+
+  .te_cart_icon_head{
+    position: fixed;
+    right: 30px;
+    margin-top: -10px;
+  }
+
+  @media (max-width: 767.98px) {
+    .te_header_style_1_main > .col-lg-4 {
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .te_header_style_1_main {
+        margin: 5;
+        text-align: right;
+        padding: 20px 0 8px 0 !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .te_header_style_1_main div.te_cart_icon_head, .te_header_style_1_main div.te_wish_icon_head {
+        padding: 0px 10px;
+    }
+}
+
+.te_header_1_right .te_wish_icon_head a, .te_header_1_right .te_cart_icon_head a {
+    padding: 0;
+    position: relative;
+    display: inline-block !important;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 767.98px) {
+    .te_header_1_right .te_wish_icon_head a sup, .te_header_1_right .te_cart_icon_head a sup {
+        top: -10px;
+        right: -14px;
+        padding: 0.3em 0.5em;
+    }
+}
+
+.te_header_1_right .te_wish_icon_head a sup, .te_header_1_right .te_cart_icon_head a sup {
+    border-radius: 40px;
+    vertical-align: top;
+    font-size: 74%;
+    position: absolute;
+    top: -16px;
+    right: -10px;
+    display: inline-block !important;
+}
+
+/* For count number */
+
+
+.badge-primary {
+    color: #000000;
+    background-color: #bbbbbbd4;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 80%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/**/
+
+/* For Heart Heading */
+.te_header_2_right {
+    position: fixed;
+    right: 30px;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .te_header_2_right .te_heart_icon_head {
+    display: flex;
+    align-items: center;
+  }
+  
+  .te_header_2_right .te_heart_icon_head a,
+  .te_header_2_right .te_heart_icon_head .fa-heart {
+    font-size: 22px;
+    position: fixed;
+    display: block;
+    margin-left: 201px; 
+    margin-top: 9px; 
+    right: 83px;
+    top: 1rem;
+  }
+  
+  .te_header_2_right .te_heart_icon_head a:hover {
+    color: red;
+  }
+  
+  .red {
+    color: red;
+  }
+
+/* Make the blue color visible */
+header a {
+    color: white;
+}
+  
+  @media (max-width: 767.98px) {
+    .te_header_2_right .te_heart_icon_head a,
+    .te_header_2_right .te_heart_icon_head .fa-heart {
+      font-size: 1.5rem;
+      margin-left: 5px; /* adjust this value to change the position of the heart icon */
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .te_header_2_right .te_heart_icon_head a,
+    .te_header_2_right .te_heart_icon_head .fa-heart {
+      font-size: 1.2rem;
+      margin-left: 5px; /* adjust this value to change the position of the heart icon */
+    }
+  }
+
+
+/* For heart to change to red*/
+  .heart i {
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    transition: color 0.3s ease;
+  }
+  
+  .heart.red i {
+    color: red;
+  }
+
+
+/* For heart for all images in page*/
+
+.heart > .fas {
+    color: #9d9d9d;
+    position: absolute;
+    font-size: 25px;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.heart > .fas{
+    top: 10px;
+    left: 210px;
+}
+
+@media (max-width: 767.98px) {
+    .heart > .fas {
+      font-size: 2rem;
+    }
+  
+    .heart > .fas {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .heart > .fas {
+      font-size: 1.5rem;
+    }
+  
+    .heart > .fas {
+        left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  /**/
