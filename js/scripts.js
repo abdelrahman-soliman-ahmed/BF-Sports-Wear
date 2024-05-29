@@ -1,14 +1,15 @@
 /* That script for star ratings*/
 const starRatings = document.querySelectorAll('.star-rating');
 
-starRatings.forEach(starRating => {
+// Added starRating as the second argument of the callback function
+starRatings.forEach((starRating, index) => {
   const spans = starRating.querySelectorAll('.star');
   let rating = parseInt(starRating.getAttribute('data-rating'));
 
   spans.forEach((span, index) => {
     span.addEventListener('click', () => {
       rating = index + 1;
-      updateStarRating(spans, rating);
+      updateStarRating(spans, starRating, rating);
     });
 
     if (index < rating) {
@@ -19,7 +20,7 @@ starRatings.forEach(starRating => {
   });
 });
 
-function updateStarRating(spans, rating) {
+function updateStarRating(spans, starRating, rating) {
   spans.forEach(span => {
     if (parseInt(span.getAttribute('data-rating')) <= rating) {
       span.classList.add('active');
@@ -140,3 +141,4 @@ heart.forEach(item => {
   });
 
 });
+

@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -41,7 +46,7 @@ header, .navbar {
     padding: 0;
     color: #fff;
 }
- 
+
 #navbar-brand:hover {
     color: #fff;
 }
@@ -59,8 +64,11 @@ header, .navbar {
 
 .navbar-nav{
     position: relative;
-    right: 35%;
+    right: 38%;
+    margin-left: 163px;
 }
+
+
 
 /* For Home At first Link In List */
 
@@ -539,6 +547,7 @@ header a {
     z-index: 1;
     cursor: pointer;
     margin-top: 12px;
+    margin-left: -88px;
 }
 
 .heart > .fas{
@@ -546,7 +555,7 @@ header a {
     left: 210px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 500.98px) {
     .heart > .fas {
       font-size: 2rem;
     }
@@ -567,5 +576,3 @@ header a {
       transform: translateX(-50%);
     }
   }
-
-  /**/
